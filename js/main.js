@@ -1,14 +1,15 @@
 (() => {
   console.log('game js file loaded!');
 //variables
-const holes = document.querySelectorAll('.hole');
-const scoreBoard = document.querySelector('.score');
-const bugs = document.querySelectorAll('.bug');
-const startButtom = document.querySelector('button');
-let lastHole;
-let timeUp = false;
-let score = 0;
-var timeleft = 10;
+const startScreen = document.querySelector('.start-screen'),
+  holes = document.querySelectorAll('.hole'),
+ scoreBoard = document.querySelector('.counter'),
+ bugs = document.querySelectorAll('.bug'),
+ startButtom = document.querySelector('button');
+var lastHole,
+timeUp = false,
+score = 0,
+timeleft = 10;
 
 function countDown() {
 var timer = setInterval(function(){
@@ -47,6 +48,7 @@ function startGame() {
   scoreBoard.textContent = 0;
   timeUp = false;
   score = 0;
+  startScreen.classList.add('hide-start');
   peep();
   setTimeout(() => timeUp = true, 10000)
 

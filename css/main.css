@@ -5,24 +5,60 @@
 body {
   padding: 0;
   margin:0;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Mina', sans-serif;
+  background-image: url(../images/background.jpg);
 }
 
 h2 {
-  font-family: 'Mina', sans-serif;
+  font-size: 80px;
+  margin: 0;
+}
+
+h3 {
   font-size: 50px;
   text-align: center;
-  padding: 30px;
+  margin: 0;
+}
+
+.score h3
+{
+  display: inline;
+}
+
+.start-screen h3{
+  font-size: 35px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h4{
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.start-screen button
+{
+  margin-top: 15px;
+  width: 100px;
+  height: 50px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.counter {
+  display: inline;
+  width: 30px;
+  padding: 0;
 }
 
 #container
 {
   width: 1000px;
   margin: 0 auto;
-  background-color: #333;
   color: #fff;
   text-align: center;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .score {
@@ -30,14 +66,35 @@ h2 {
   color: red;
 }
 
+.planetBg{
+position: relative;
+margin-top: -10px;
+}
+
 #gameContainer {
+  position: absolute;
+  top: 70px;
+  left: 190px;
   width:600px;
   height:400px;
-  background-color: #fff;
   display:flex;
   flex-wrap:wrap;
   margin:0 auto;
+  margin-top: 60px;
 }
+
+.start-screen{
+	display: block;
+	position: absolute;
+	top: 130px;
+	width: 1000px;
+	height: 200px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.95);
+}
+
+.hide-start { display: none; }
+
 
 .hole {
   flex: 1 0 33.33%;

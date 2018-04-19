@@ -1,0 +1,35 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Whack a Bug Game by Helen Unger and Jacob Atkinson\
+Tutorials used: \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown"}}{\fldrslt \cf0 https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown}}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://javascript30.com/"}}{\fldrslt \cf0 https://javascript30.com/}} \
+game logic:\
+\
+on game load up\
+  score = 0\
+  timer = 10 seconds\
+  high score = 0\
+  level = 0\
+  Bug timing = 2 seconds (every level up time shortens)\
+\
+on game start/restart (first do initialize and set everything back to original values)\
+- bugs pop up in random holes (6) with a randomly get faster as levelling up goes on\
+- timer counts down\
+\
+when a bug gets clicked\
+- score++ / show score\
+- make bug go down\
+\
+when timer runs out\
+- if they won and they\'92re at level 3 then ask if they want to go to next level (hardmode) or if they want to enlist in the newsletter since they\'92re so good\
+- if they won, but are not at level 3 yet, ask if they want to level up (shortens bug up time) reset game with shorter timings\
+- if they didn\'92t hit every bug tell them how many they did hit, ask if they want to try again\
+}
